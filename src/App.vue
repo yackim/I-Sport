@@ -4,9 +4,9 @@
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template>
+<template >
   <p>.</p>
-  <img alt="Ispm logo" src="./assets/ispm.png" />
+  <img alt="Ispm logo" src="./assets/stade-barea.jpg" />
   <HelloWorld msg="I-SPORT" />
 </template>
 
