@@ -33,7 +33,8 @@ const count = ref(0)
   <p>les matchs inter-classe organisés au sein de l'institut.
 </p>
 
- <p> <button type="button" @click="Inscription.vue"><a href="Inscription.vue">S'inscrire</a></button></p>    
+ <p><router-link to="Inscription">Inscription</router-link><a href="Inscription">Accueil</a>
+</p>    
  <p> <button type="button" @click="Inscription.vue" ><a href="Connecter.vue">Se connecter</a></button></p>
  <!-- <p> <input type="button" href="Inscription.vue" value=a>S'inscrire</p>-->
  <!-- <p>
@@ -41,7 +42,8 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   -->
-  <p>.</p>
+  <p>@Coopright</p>
+  <p>.</p><p>.</p>
   
 </template>
 

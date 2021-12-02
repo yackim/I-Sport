@@ -1,3 +1,4 @@
+
 <script setup lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
@@ -6,11 +7,19 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <p>.</p>
-  <img alt="Ispm logo" src="./assets/ispm.png" />
+  saluts
   <HelloWorld msg="I-SPORT" />
 </template>
 
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello vue!'
+  }
+})
+
 <style>
+
 #app {
   background-color: #6CB983;
   font-family: Avenir, Helvetica, Arial, sans-serif;
