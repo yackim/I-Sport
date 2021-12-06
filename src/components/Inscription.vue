@@ -33,7 +33,7 @@ const count = ref(0)
   <p>les matchs inter-classe organisés au sein de l'institut.
 </p>
 
- <p> <button type="button" @click=" ">S'inscrire</button></p>    
+ <p> <button type="button" @click="">S'inscrire</button></p>    
  <p> <button type="button" @click=" ">Se connecter</button></p>
  <!-- <p>
     Edit

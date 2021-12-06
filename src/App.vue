@@ -4,15 +4,17 @@
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
-<template>
-  <p>.</p>
-  <img alt="Ispm logo" src="./assets/ispm.png" />
-  <HelloWorld msg="I-SPORT" />
+<template >
+    <div><img alt="Ispm logo" src="src/assets/log.png" /></div>
+    <HelloWorld msg="" />
+   <!--<img alt="Ispm logo" src="./assets/ispm.png" />-->
+  <br>
 </template>
+
 
 <style>
 #app {
-  background-color: #6CB983;
+  background-color: #269D9D;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
