@@ -1,18 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import Inscription from '../components/Inscription.vue'
+import Connecter from '../components/Connecter.vue'
 
 const routes = [
   {
-    path: '',
+    path: '/hello',
     name: 'hello',
     component: HelloWorld
   },
   {
     path: '/ins',
-    name: 'inscrition',
+    name: 'inscription',
     component: Inscription
+  },
+  {
+    path: '/bro',
+    name: 'Connecter',
+    component: Connecter
   }
 ]
 

@@ -1,5 +1,19 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="home">
+    <img alt="Vue logo" src="../assets/logo.png">
+    <Inscription msg="Welcome to Your Vue.js App"/>
+ 
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Inscription from '@/components/Inscription.vue'
+
+export default {
+  name: 'Ins',
+  components: {
+    Inscription
+  }
+}
+</script>
