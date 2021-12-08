@@ -33,15 +33,15 @@ const count = ref(0)
   <p>les matchs inter-classe organisés au sein de l'institut.
 </p>
 
- <p> <button type="button" @click=" ">S'inscrire</button></p>    
- <p> <button type="button" @click=" ">Se connecter</button></p>
+ <p> <button type="button" @click="tyt ">S'inscrire</button></p>    
+ <p> <button type="button" @click=" tr">Se connecter</button></p>
  <!-- <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   -->
-  <p>.</p>
-  
+ 
+
 </template>
 
 <style scoped>
@@ -65,5 +65,13 @@ button {
   padding: 10px 25px;
   border-radius: 4px;
   color: white;
+}
+#fe{
+  font-color:black;
+}
+
+#connecter {
+  background-color: red;
+  
 }
 </style>
