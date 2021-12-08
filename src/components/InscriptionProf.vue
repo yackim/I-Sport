@@ -1,16 +1,15 @@
 <template>
-
 <body>
-  <div class="elevation-12" >
+  <div class="elevation-12">
    <form>
 
               <h1 class="text-center display=2 teal==text text==accent-3">
-                              Inscription Etudiant</h1>
+                              Inscription</h1>
     
     <div class="ve">
     <BR></BR><br><br>
     <P class="pere">Salut les Amis!</P>
-    <p class="pere"> Créer un nouveau Compte</p>
+    <p class="pere"> Créer un nouveau <br> Compte</p>
     <br>
     <button rounded  class="inscrire"><i class="fa fa-home"></i></button>
   </div>
@@ -20,7 +19,7 @@
       <table>
       <tr>
           <td><label class="soratra" for=""><i class="fa fa-user"></i></label>
-          <input type="submit" class="boite" value="Etudiant"></td>  
+          <input type="submit" class="boite" value="Professeur"></td>  
       </tr> 
       <br>
        <tr>
@@ -29,12 +28,8 @@
       </tr><br>
       <tr>
           <td><label for=""><i class="fa fa-university"></i></label>
-          <input class="boite" type="password" placeholder="veuillez mettre votre Classe"></td>
+          <input class="boite" type="password" placeholder="veuillez mettre votre Matière"></td>
       </tr>  <br>
-       <tr>
-          <td><label class="soratra" for=""><i class="fa fa-qrcode"></i></label>
-          <input type="text" class="boite" placeholder="veuillez mettre votre Matricule"></td>  
-      </tr><br>
       <tr>
           <td><label for=""><i class="fa fa-unlock-alt"></i></label>
           <input class="boite" type="password" placeholder="veuillez mettre votre Mot de passe"></td>
@@ -51,7 +46,6 @@
       </tr>
   </table>
   
-
 </body>
 </template>
  
@@ -73,7 +67,6 @@ v-container{
 table{
     margin-top:-441px;
     margin-left:531px;
-    background-color: snow;
 }
 
 button{
@@ -97,7 +90,6 @@ button{
 .boite{
   width: 250px;
   border: 2px solid rgb(236, 224, 25);
-  border-radius: 12px;
 }
 .pty{
   margin-left:23px;
@@ -106,11 +98,8 @@ button{
   margin-left:17px;
    width: 250px;
   border: 2px solid rgb(236, 224, 25);
-  border-radius: 12px;
 }
-h1{
-  margin-left: 235px;
-}
+
 img{
      width: 216px;
     height: 166px;
@@ -122,7 +111,6 @@ img{
    font-size: 19px;
   font-weight: bold;
 }
-
 
 .pere{
   font-family: Arial, Helvetica, sans-serif;
@@ -140,6 +128,9 @@ img{
 }
 .ree{
   margin-left: 212px;
+}
+h1{
+  margin-left: 235px;
 }
 body{
     background-image: url(../assets/SE.jpg);

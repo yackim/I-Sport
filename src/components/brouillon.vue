@@ -1,64 +1,96 @@
-
 <template>
-  <v-app>
-    <v-content class="fe">
-      <v-container class="fill-height" fluid>
-        <v-row align="center" justify="center">
-          <v-col cols="12" sm="8" md="8">
-            <v-card class="elevation-12">
-              <v-window v-model="step">
-                  <v-window-item :value="1">
-                    <v-row>
-                      <v-col cols="12" md="8">
-                          <v-card-text class="mt-12">
-                             <h1 class="text-center display=2 teal==text text==accent-3">
-                              Hello</h1>
-                              <div  class="text-center display=2 teal==text text==accent-3">
-                                <label for="fer" class="text-center display=2 teal==text text==accent-3">Email</label>
-                                <input type="text">
-                                </div>
-                              <v-form >
-                                
-                                <v-text-field
-                                  label="Email"
-                                  name="Email"
-                                  prepend-icon="email"
-                                  type="text"
-                                  color="teal accent-3"
-                                />
-                                <v-text-field
-                                  label="password"
-                                  name="Password"
-                                  prepend-icon="lock"
-                                  type="password"
-                                  color="teal accent-3"
-                                />
-                              </v-form>
-                             <h3 class="text-center mt-3">Forget your password</h3>
-                          </v-card-text>
-                          <div class="text-center mt-3">
-                            <button rounded color="teal accent-3" dark>SIGN IN</button>
-                          </div>
-                       </v-col >
-                      
-                    </v-row >  
-                  </v-window-item >
-                  <v-window-item :value="2">
-                     
-                  </v-window-item >
-               </v-window>
-            </v-card>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-content>  
-  </v-app>
+  <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>
+          
+          <form action="/" method="post">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off"/>
+          </div>
+          
+          <button type="submit" class="button button-block">Get Started </button>
+          
+          </form>
+
+        </div>
+        
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off"/>
+          </div>
+          
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          
+          <button class="button button-block">Log In</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
 </template>
+
 <style scoped>
-button{
-  background-color: brown;
+ 
+
+.button-block {
+  display:block;
+  width:100%;
 }
-v-contener{
-background-color: brown;
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
 }
 </style>
